@@ -16,6 +16,7 @@ def next_indo(protin,lenf):
     return next
     
 def protin_C(protin,protin_amunt):
+    file_a=open('results/Out_RandProtSeq.txt', 'w')
     lenf=len(protin)
     for p in range(protin_amunt+1):
         for i in range(150):
@@ -27,7 +28,8 @@ def protin_C(protin,protin_amunt):
               left_part = protin[:index]
               right_part = protin[index:]
               protin=left_part + next + right_part
-           print(protin + "\n")
+        file_a.write("Rand_Prot "+str(p)+"\n" )
+        file_a.write(protin+"\n" )
 
 
 protin_amunt =int(input("Please indicate how many random protein sequences you need (1-1000)?"))
