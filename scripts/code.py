@@ -33,5 +33,8 @@ def protin_C(protin,protin_amunt):
 
 
 protin_amunt =int(input("Please indicate how many random protein sequences you need (1-1000)?"))
+if protin_amunt>1000 or not protin_amunt.isdigit():
+    print("you can  choose only less than 1000 and must not put down non numbers  ")
+    protin_amunt =int(input("Please indicate how many random protein sequences you need (1-1000)?"))
 protin="M"
 protin_maker=protin_C(protin,protin_amunt)
