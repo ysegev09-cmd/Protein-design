@@ -17,17 +17,17 @@ def next_indo(protin):
      return next
     
 def protin_C(protin,protin_amunt):
-    list=[hydrophobs,poli_protin,postive,negtive]
+    #list=[hydrophobs,poli_protin,postive,negtive]
     for p in range(protin_amunt+1):
         for i in range(150):
-           next=
-        if len<=1:
-            protin=protin + next 
-        if len<1:
-            index = random.randint(1, len(protin) - 1)
-            left_part = protin[:index]
-            right_part = protin[index:]
-            protin=left_part + next + right_part
+           next=next_indo(protin)
+           if len<=1:
+              protin=protin + next 
+           if len<1:
+              index = random.randint(1, len(protin) - 1)
+              left_part = protin[:index]
+              right_part = protin[index:]
+              protin=left_part + next + right_part
     
 
 
